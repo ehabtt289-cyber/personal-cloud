@@ -1,0 +1,79 @@
+
+You are a senior full-stack developer. Build a complete production-ready web application using the MERN stack (MongoDB, Express.js, React, Node.js).
+🎯 Project Name:
+Personal Cloud Vault App
+📌 Core Idea:
+A private personal storage application where users can store everything:
+Notes (text editor)
+Images uploads
+Video uploads
+File uploads (PDF, DOCX, etc.)
+Organized in a clean dashboard like Notion / Google Drive hybrid
+🔐 Authentication:
+Simple login system
+Single fixed password for now: 12345678
+No signup required
+After login user accesses full dashboard
+(Keep auth system structured so it can later be upgraded to JWT authentication)
+☁️ Storage Requirements:
+Use MongoDB for metadata (file links, notes, titles)
+Use cloud storage for files:
+Use Cloudinary for images and videos
+Store file URLs in database
+🧩 Features:
+1. Dashboard
+Clean modern UI
+Sidebar navigation:
+Notes
+Images
+Videos
+Files
+2. Notes System
+Create / edit / delete notes
+Rich text editor preferred
+3. File Upload System
+Upload images
+Upload videos
+Upload documents
+Preview files inside app
+4. Media Gallery
+Grid layout for images
+Video player for videos
+5. Search
+Search across all stored items
+6. Organization
+Tags or categories system
+Optional folders
+🎨 UI/UX Requirements:
+Modern clean design (like Notion or Google Drive)
+Responsive (mobile + desktop)
+Dark mode optional
+Smooth animations
+🛠 Tech Stack:
+Frontend:
+React.js
+Tailwind CSS (preferred)
+Axios
+Backend:
+Node.js
+Express.js
+MongoDB (Mongoose)
+Storage:
+Cloudinary for media
+Local handling for temp uploads
+📁 Output Required:
+Generate full working project with:
+Backend folder (server)
+Frontend folder (client)
+Environment variables examples
+Setup instructions
+Clean code structure
+Reusable components
+⚡ Bonus (if possible):
+Drag and drop upload
+File preview modal
+Loading states
+Toast notifications
+Basic analytics (number of files, notes, etc.)
+🚀 Goal:
+A fully working personal cloud vault app that looks professional and is easy to extend.

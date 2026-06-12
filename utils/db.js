@@ -3,9 +3,10 @@ const { Pool } = pg;
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: process.env.NODE_ENV === "production" 
-    ? { rejectUnauthorized: false } 
-    : false,
+  host: 'dpg-d8lvd7cvikkc73bumto0-a.frankfurt-postgres.render.com', 
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 export default pool;

@@ -32,9 +32,9 @@ app.use("/api/stats", statsRouter);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/dist")));
-  app.get("(.*)", (req, res) => {
+  app.get(/^(?!\/api).*$/, (req, res) => {
     res.sendFile(path.join(__dirname, "client/dist/index.html"));
-  });
+});
 }
 
 const PORT = process.env.BACKEND_PORT || 3001;

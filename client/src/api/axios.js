@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://personal-cloud-q4e2.onrender.com/api ",
+  baseURL: "https://personal-cloud-q4e2.onrender.com ",
 });
 
 api.interceptors.request.use((config) => {
